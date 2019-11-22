@@ -1,0 +1,767 @@
+html,
+body {       
+        
+        padding-bottom: 40px;
+        padding-bottom: 40px;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none;   /* Chrome 6.0+, Safari 3.1+, Edge & Opera 15+ */
+        -moz-user-select: none;      /* Firefox */
+        -ms-user-select: none;       /* IE 10+ and Edge */
+        user-select: none;
+        background: #fff;
+        min-height: 200px;
+        min-width: 500px;
+    }
+
+    .join{
+        height: 549px;
+        top: 0px;
+        background-image: url('/static/images/courses/bg.jpg');
+        background-repeat: no-repeat;
+        background-position: top center;
+
+    }
+
+    .container{
+        width: 80%;
+        margin: 0 auto; /* Center the div tag horizontally */
+    }
+
+    
+    .my-head{
+        width: 100%;
+        position: absolute;
+        top: 0;  
+        padding: 10px 0;
+        color: #fff;
+        background-position: top center;
+    }
+
+/*Style for Footer Section*/
+    .my-footer{
+        position: absolute;
+        margin-top: 1087px;
+        width: 100%;
+        height: 120px;
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+        border-top: 2px solid #d82a4e;
+    }   
+
+    .container-footer{
+        position: absolute;
+        width: 25%;
+        margin-left: 100px;
+        margin-top: 60px;
+        padding-top: 20px; 
+    }
+
+    .container-footer1{
+        position: absolute;
+        margin-left: 938px;
+        margin-top: 60px;
+        padding-top: 20px; 
+    }
+
+    .footer-logo{
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 100px;
+        padding-bottom: 10px; 
+    } 
+
+     .container1{
+        position: absolute;
+        width: 15%;
+        height: 60px;
+        margin-top: 0px;
+        margin-left: 1068px;
+        text-align: left;
+        padding-bottom: 5px;
+        font-size: 16px;
+    }
+
+    .container1 a{
+        color: #d82a4e;
+    }
+
+    .container1 a:hover{
+       border: none;
+       background: transparent;
+       color: #fff;
+       text-decoration: none;
+    }
+
+     .container2{
+        position: absolute;
+        width: 21%;
+        height: 60px;
+        margin-top: 25px;
+        margin-left: 550px;
+        text-align: center;
+        padding-bottom: 5px; 
+        transition: transform .3s;
+    }
+
+    .container2 :hover {
+       transform: scale(1.3);
+       opacity: 1;
+    }
+
+   
+/*End of Footer section*/
+
+    /*Style for Logo Section*/
+
+       .logo{
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 100px;
+    } 
+
+    /*End of Style for Logo Section*/
+
+/*Style for Dropdown Section*/
+    .drop{
+        position: relative;
+        display: inline-block;
+        font-size: 16px;
+        color: #fff;
+        margin-left: 240px;
+        font-weight: 600;
+        padding: 55px 0 15px;
+    }
+
+    
+.drop a:hover{
+    border: none;
+    background: transparent;
+    color: #d82a4e;
+    text-decoration: none;
+}
+
+
+
+.drop a {
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 48px;
+    font-weight: 600;
+    padding: 20px 0 5px;
+    text-decoration: none;
+}
+
+
+.dropdown{
+    position: absolute;
+    top: 86px;
+    margin-left: 988px;
+}
+
+.btn-btn-primary-dropdown-toggle{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-btn-primary-dropdown-toggle:hover,:focus {
+    border: none;
+    color: #d82a4e;
+    text-decoration: none;
+}
+
+.dropdown-toggle{
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.dropdown-toggle:hover,:focus {
+    border: none;
+    background: transparent;
+    color: #d82a4e;
+}
+
+.dropdown-menu{
+    font-size: 18px;
+    font-weight: 400;
+    font-weight: 600;
+    color: #fff; 
+}
+
+.dropdown-menu:hover,:focus {
+    border: none;
+    background: #fff;
+    color: #d82a4e;
+}
+
+/*End of Style for Dropdown Section*/
+
+/*Style for info-about1 DIV*/
+.info-about1{
+    position: absolute;
+    width: 100%;
+    height: 410px;
+    margin-top: 136px;
+    box-shadow: box-shadow: 0px 1px 4px rgba(.5, .5, 0, .5);
+}
+
+.c-name{
+    font-size: 54px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    margin-left: 350px;
+}
+
+.c-brief{
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+    margin-left: 410px;
+    text-align: center;
+}
+
+.validity-n-btn{
+    position: absolute;
+    width: 27%;
+    height: 130px;
+    margin-left: 100px;
+    background: transparent;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.c-validity{
+    font-size: 20px;
+    color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.btn-enroll{
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #d82a4e;
+    padding: 15px 15px 13px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px rgba(.5, .5, 0, .5);
+}
+
+.btn-enroll:hover{
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.free-lec{
+    width: 300px;
+    height: 190px;
+    margin-left: 550px;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px 5px #D3D3D3;
+    background-color: black;
+}
+
+.c-demo{
+    position: absolute;
+    width: 25%;
+    margin-left: 910px;
+    background: transparent;
+    margin-top: -170px;
+    text-align: right;
+}
+
+.c-offer{
+    font-size: 18px;
+    color: #fff;
+    text-align: right;
+    margin-left: 145px;
+}
+
+.instructor-logo{
+    
+    width: 250px;
+    height: 80px;
+}
+
+/*End of Style for info-about1 DIV*/
+
+
+
+/*Style for Course info link bar DIV*/
+.info-select{
+    position: absolute;
+    width: 100%;
+    margin-top: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #fff;
+    box-shadow: 0px 1px 4px rgba(.5, .5, 0, .5);
+    color: black; 
+    font-size: 16px;
+}
+
+/*Style for Link*/
+.about{
+    background: #fff;
+    outline: none;
+    height: 30px;
+    width: 65px;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    margin-left: 98px;
+}
+
+.course-link{
+    background: #fff;
+    outline: none;
+    height: 30px;
+    width: 110px;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    margin-left: 0px;
+}
+
+.course-link-rating{
+    background: #fff;
+    outline: none;
+    height: 30px;
+    width: 205px;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    margin-left: 0px;
+}
+
+.course-link-faq{
+    background: #fff;
+    outline: none;
+    height: 30px;
+    width: 45px;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    margin-left: 0px;
+}
+
+.course-link:hover, :focus, .about:hover, .course-link-faq:hover, :focus,.course-link-rating:hover, :focus{ 
+    color: #d82a4e;
+    background: #fff;
+    outline:none;
+    text-decoration: none;
+}
+/*End of style for Course info link bar DIV*/
+
+
+
+/*Style for info  DIV*/
+.info{
+    position: absolute;
+    width: 100%;
+    height: 1050px;
+    margin-top: 54px;
+    background: #F5F5F5;
+}
+
+/*Style for info-about2 DIV*/
+.info-about2{
+    position: absolute;
+    width: 1150px;
+    height: 993px;
+    margin-top: 30px;
+    margin-left: 100px;
+    background: #fff;
+}
+
+.c-about{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 30px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+.c-about2{
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+.overview{
+    position: absolute;
+    width: 750px;
+    height: 320px;
+    margin-top: 50px;
+    margin-left: 200px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px #D3D3D3;
+}
+
+.overview:hover{  
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 2s ease;
+}
+
+.c-overview{
+    position: absolute;
+    width: 470px;
+    height: 45px;
+}
+
+.c-overview2{
+    font-size: 26px;
+    width: 270px;
+    margin-top: 5px;
+    margin-left: 280px;
+}
+
+.c-info{
+    position: absolute;
+    width: 269px;
+    height: 45px;
+    margin-left: 1px;
+    border: 1px solid #D3D3D3;
+}
+
+.c-info2{
+    position: absolute;
+    width: 479px;
+    height: 45px;
+    margin-left: 270px;
+    border: 1px solid #D3D3D3;
+}
+
+.c-info-lab1{
+    margin-top: 10px;
+    margin-left: 70px;
+    font-size: 13px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+.c-info-lab2{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+.c-learn{
+    position: absolute;
+    margin-top: 422px;
+    margin-left: 200px;
+    width: 750px;
+    height: 180px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 5px 5px #D3D3D3;
+}
+
+.c-learn:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 2s ease;
+}
+
+.arrow{
+    margin-left: 40px;
+}
+
+.c-learn2{
+    margin-left: 5px;
+    margin-top: 10px;
+    font-weight: normal;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+.c-skill{
+    position: absolute;
+    margin-top: 655px;
+    margin-left: 200px;
+    width: 750px;
+    height: 110px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 5px 5px #D3D3D3;
+}
+
+.c-skill:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 2s ease;
+}
+
+.c-skill1{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 180px;
+    height: 22px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: #d82a4e;
+    border-radius: 10px;
+}
+
+.c-skill2{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 240px;
+    width: 180px;
+    height: 22px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: #d82a4e;
+    border-radius: 10px;
+}
+
+/*End of Style for info DIV*/
+
+
+/*Style for Syllabus DIV*/
+.syllabus{
+    position: absolute;
+    width: 100%;
+    height: 1050px;
+    margin-top: 54px;
+    background: #F5F5F5;
+}
+
+.syllabus-info{
+    position: absolute;
+    width: 1150px;
+    height: 1000px;
+    margin-top: 30px;
+    margin-left: 100px;
+    background: #fff;
+}
+
+.s-title{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 300px;
+    font-size: 30px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+}
+
+.s-module-bt{
+    position: absolute;
+    background: black;
+    width: 60px;
+    margin-left: 185px;
+    margin-top: 30px;
+    font-size: 18px;
+    background: transparent;
+    border: transparent;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+}
+
+.s-module-btn{
+    position: absolute;
+    background: black;
+    width: 60px;
+    margin-left: 247px;
+    margin-top: 30px;
+    font-size: 18px;
+    background: transparent;
+    border: transparent;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+}
+
+.s-module-bt:hover, .s-module-btn:hover{
+    -webkit-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    transform: scale(1.06);
+    transition: 20ms ease;
+}
+
+.change-module{
+    width: 30px;
+    height: 30px;
+}
+
+.s-module-main{
+    position: absolute;
+    width: 750px;
+    height: 706px;
+    margin-left: 200px;
+    margin-top: 20px;
+    background: #D3D3D3;
+    border-radius: 10px 10px;
+    box-shadow: 0px 0px 10px 5px #D3D3D3;
+}
+
+.s-module-main:hover{
+    -webkit-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+    transition: 2s ease;
+}
+
+
+.s-mod{
+    position: absolute;
+    width: 750px;
+    height: 45px;
+    background: #fff;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.s-mod-name{
+    font-size: 26px;
+    width: 135px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.s-label{
+    margin-top: 5px;
+    margin-left: 0px;
+    font-size: 22px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+}
+
+.s-label2{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 14px; 
+    font-weight: normal;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+}
+
+.s-chapter-name{
+    margin-left: 10px;
+    font-size: 14px; 
+    font-weight: normal;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+}
+
+.s-lec{
+    position: absolute;
+    width: 750px;
+    height: 659px;
+    background: #fff;
+    margin-top: 46px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.s-lec-num{
+    position: absolute;
+    width: 169px;
+    height: 45px;
+    margin-left: 1px;
+    border: 1px solid #D3D3D3;
+}
+
+.s-lec-name{
+    position: absolute;
+    width: 579px;
+    height: 45px;
+    margin-left: 170px;
+    border: 1px solid #D3D3D3;
+}
+
+.s-lec-num1{
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 13px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+.s-lec-name2{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+/*End of Style for Syllabus DIV*/
+
+
+/*Style for instructor DIV*/
+.instructor{
+    position: absolute;
+    width: 100%;
+    height: 1050px;
+    margin-top: 54px;
+    background: #F5F5F5;
+}
+
+.instructor-img{
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    margin-left: 605px;
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.i-image{
+    margin-left: 7.5px;
+    margin-top: 5px;
+    width: 175px;
+    height: 175px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.instructor-info{
+    position: absolute;
+    width: 1150px;
+    height: 400px;
+    margin-top: 217px;
+    margin-left: 100px;
+    background: #fff;
+}
+
+.i-info{
+    width: 250px;
+    margin-left: 480px;
+    margin-top: 10px;
+    background: white;
+    text-align: center;
+    font-size: 22px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+.i-info2{
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 300px;
+    font-size: 30px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+
+}
+
+.i-info3{
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 1090px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+/*End of Style for instructor DIV*/
+

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+    <title>Video Player page template</title>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+    <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="{% static 'javascript/main.js' %}"></script>
+    <script src="{% static 'javascript/night.js' %}"></script>
+
+    <!-- using online links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+
+    <!--Video player links-->
+    <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+     <style type="text/css">
+     .vjs-default-skin { color: #d82a4e; }
+     .vjs-default-skin .vjs-control-bar { font-size: 198% }
+     </style>
+
+    <!-- using local links -->
+    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"> -->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/player.css' %}">
+    <link rel="stylesheet" href="css/sidebar-themes.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+</head>
+
+<body>
+    <div class="page-wrapper default-theme sidebar-bg bg1 toggled">
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <!-- sidebar-brand  -->
+                <div class="sidebar-item sidebar-brand">
+                    <label>Course Name</label>
+                </div>
+                <hr>
+                <!-- sidebar-header  -->
+                <div class="sidebar-item sidebar-header d-flex flex-nowrap">
+                    <div class="user-pic">
+                        <img class="img-responsive img-rounded" src="{% static 'images/video/user.jpg' %}" alt="User picture">
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name"><label>Learner's Name</label>
+                        </span>
+                    </div>
+                </div>
+                <!-- sidebar-menu  -->
+                <div class=" sidebar-item sidebar-menu">
+                    <ul>
+                        <li class="header-menu">
+                            <span>Lecture and Assignment</span>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-file-video"></i>
+                                <span class="menu-text">Module 1</span>
+                                <span class="badge badge-pill badge-warning">12</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Lecture 1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lecture 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lecture 3</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-file-video"></i>
+                                <span class="menu-text">Module 2</span>
+                                <span class="badge badge-pill badge-warning">10</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Lecture 1
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lecture 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lecture 3</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-file-video"></i>
+                                <span class="menu-text">Module 3</span>
+                                <span class="badge badge-pill badge-warning">8</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Lecture 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lecture 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lecture 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lecture 4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lecture 5</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-file-video"></i>
+                                <span class="menu-text">Module 4</span>
+                                <span class="badge badge-pill badge-warning">12</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Lecture 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lecture 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lecture 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lecture 4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-file-video"></i>
+                                <span class="menu-text">Module 5</span>
+                                <span class="badge badge-pill badge-warning">12</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Lecture 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lecture 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lecture 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lecture 4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header-menu">
+                            <span>Notes</span>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-file-pdf"></i>
+                                <span class="menu-text">Notes</span>
+                                <span class="badge badge-pill badge-warning">12</span>
+                            </a>
+                        </li>
+                        <li class="header-menu">
+                            <span>Discussion Forum</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+            <!-- sidebar-footer  -->
+            <div class="sidebar-footer">
+               <div class="power">
+                    <a href="#">
+                        <i class="fa fa-power-off"></i>
+                    </a>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-info"></i>
+                    </a>
+                    <div class="dropdown-menu messages" aria-labelledby="dropdownMenuMessage">
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <div class="message-content">
+                                <div class="content">
+                                    <div class="message-title">
+                                        <strong> Lecture</strong>
+                                    </div>
+                                    <div class="message-detail">Completion %</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="message-content">
+                                <div class="content">
+                                    <div class="message-title">
+                                        <strong> Assignments</strong>
+                                    </div>
+                                    <div class="message-detail">Completion %</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+
+                <div class="dropdown">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuMessage">
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">My Courses</a>
+                        <a class="dropdown-item" href="#">Home</a>
+                    </div>
+                </div>
+                <div class="power">
+                    <button onclick="myFunction()" class="btn">
+                       <i class="fa fa-moon"></i>
+                    </button>
+                </div>               
+            </div>
+        </nav>
+    </div>
+    
+    
+
+    <div style="margin-left: 296px; margin-top: -610px">
+      <video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls
+    preload="auto" width="1055" height="630" poster="{% static 'images/video/vid1.png' %}"
+    data-setup="{}">
+        <source src="{% static 'images/courses/index1.mp4' %}" type='video/mp4'>
+      </video>  
+    </div>
+  
+</body>
+
+</html>

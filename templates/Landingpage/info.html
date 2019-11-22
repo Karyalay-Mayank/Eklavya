@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html>
+<head>
+	<title>Course info template</title>
+	<meta charset="UTF-8">
+    <meta name="description" content="WebUni Education Template">
+    <meta name="keywords" content="Eklavya, education, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->   
+    <link href="img/favicon.ico" rel="shortcut icon"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{% static 'css/info.css' %}"/>
+
+  <!--Course DIV Changer JavaScript-->
+  <script type="text/javascript" src="{% static 'javascript/loader.js' %}"></script>
+
+  <script type="text/javascript" src="{% static 'javascript/show.js' %}"></script>
+
+</head>
+<body onload=hideAll('mydiv1')>
+    <div class="join">    
+      <div class="my-head">
+           <div class="logo">
+              <img src="{% static 'images/courses/logo.png' %}" alt="">
+           </div>
+   
+           <div class="container">
+               <nav  class="drop">
+             
+                   <a href="#">Home</a>
+                   <a href="#">About Us</a>
+                   <a href="#">Courses</a>
+                   <a href="#">News</a>
+                   <a href="#">Contact</a>
+               </nav>          
+           </div>
+
+           <div class="dropdown">
+                <a class="btn-btn-primary-dropdown-toggle" type="button" data-toggle="dropdown">Eklavya2019@email.com
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                   <li><a href="#">My Profile</a></li><p></p>
+                   <li><a href="#">My Courses</a></li><br>
+                   <li><a href="#" style="border-top: 1px solid black">Sign-Out</a></li>
+                </ul>
+           </div>
+
+      </div>
+
+    <!--Course info section tags-->   
+
+    <!--info section tags-->
+        <div class="info-about1"><br><br>
+        	<label class="c-name">Complete C Programming</label><br>
+        	<label class="c-brief">Course for those who want to learn C Programming as their first programming <br> language.You need not to have any programming background.</label><br><br>
+
+          <div class="validity-n-btn">
+            <label class="c-validity">Validity: 31 Jul 2020</label>
+            <label class="c-validity" style="margin-left: 38px">Price: ₹900</label><br><br><br>
+            <a href="" class="btn-enroll">ENROLL NOW</a>
+          </div>
+        	
+          <video src="{% static 'images/courses/C%20Demo.mp4' %}" autobuffer autoloop loop controls poster="{% static 'images/courses/C.png' %}" class="free-lec"></video>
+          <div class="c-demo">
+           	<label class="c-offer">Offered By</label><br>    
+            <img src="{% static 'images/courses/my.png' %}" alt="" class="instructor-logo"> 
+          </div>
+       </div>
+    </div>
+    <!--End of info section tags-->
+
+    <!--Course info link bar section tags--> 
+    <div class="info-select">
+        <button class="about" type="button" onclick="hideAll('mydiv1')">ABOUT</button>
+        <button class="course-link" type="button" onclick="hideAll('mydiv2')">SYLLABUS</button>
+        <button class="course-link" type="button" onclick="hideAll('mydiv3')">INSTRUCTOR</button>
+        <button class="course-link-rating" type="button" onclick="hideAll('mydiv4')">RATINGS AND REVIEWS</button>
+        <button class="course-link-faq" type="button" onclick="hideAll('mydiv5')" >FAQ</button>
+    </div>
+    
+    <!--End of info link bar section tags-->
+
+    <div class="info" id='mydiv1'>
+    	<div class="info-about2">
+    		<label class="c-about">About Complete C Programming</label><br>
+    		<label class="c-about2">Complete C Programming will introduce funadamental concept of C Programming including Array, Pointer, Structure, File Handling <br>etc. and help students to develop and improve their programming knowledge. Course contains 84 Video Lectures, 10 Assignments <br>and numbers of programming examples.<br> After completing course and passing exam students will get a Certificate.</label>
+
+            <div class="overview">
+                <div class="c-overview">
+                    <label class="c-overview2">Course Overview</label>
+                </div>
+
+                <div class="c-info" style="margin-top: 50px; background: #F0F0F0">
+                    <label class="c-info-lab1">Basic Information</label>
+                </div>
+                <div class="c-info2" style="margin-top: 50px; background: #F0F0F0">
+                    <label class="c-info-lab2">Complete C Programming</label>
+                </div>
+
+                <div class="c-info" style="margin-top: 95px">
+                    <label class="c-info-lab1">Commitment</label>
+                </div>
+                <div class="c-info2" style="margin-top: 95px">
+                    <label class="c-info-lab2">Total 60 hours</label>
+                </div>
+
+                <div class="c-info" style="margin-top: 140px; background: #F0F0F0">
+                    <label class="c-info-lab1">Language</label>
+                </div>
+                <div class="c-info2" style="margin-top: 140px; background: #F0F0F0">
+                    <label class="c-info-lab2">Hindi and English (Subtitle in English language is available)</label>
+                </div>
+
+                <div class="c-info" style="margin-top: 185px">
+                    <label class="c-info-lab1">Video Lectures</label>
+                </div>
+                <div class="c-info2" style="margin-top: 185px">
+                    <label class="c-info-lab2">84 (Divided into 11 modules)</label>
+                </div>
+
+                <div class="c-info" style="margin-top: 230px; background: #F0F0F0">
+                    <label class="c-info-lab1">Assignments</label>
+                </div>
+                <div class="c-info2" style="margin-top: 230px; background: #F0F0F0">
+                    <label class="c-info-lab2">10 (Minimum 1 Assignment per Module)</label>
+                </div>
+
+                <div class="c-info" style="margin-top: 275px">
+                    <label class="c-info-lab1">Certificate</label>
+                </div>
+                <div class="c-info2" style="margin-top: 275px">
+                    <label class="c-info-lab2">Yes (After qualifying Exam)</label>
+                </div>
+
+            </div>
+
+    		<div class="c-learn"><p></p>
+    			<label class="c-about2">WHAT YOU WILL LEARN</label><br>
+    			<img src="{% static 'images/courses/arrow.png' %}" class="arrow">
+    			<label class="c-learn2">Fundamental concepts of C Programming Language</label><br>
+    			<img src="{% static 'images/courses/arrow.png' %}" class="arrow">
+    			<label class="c-learn2">Problem Solving Techniques</label><br>
+    			<img src="{% static 'images/courses/arrow.png' %}" class="arrow">
+    			<label class="c-learn2">Creating your own application by using C language</label>
+    		</div>
+
+    		<div class="c-skill"><p></p>
+    			<label class="c-about2">WHAT SKILLS YOU WILL GAIN</label><br>
+    			<div class="c-skill1">C Programming Language</div>
+                <div class="c-skill2">Problem Solving Skill</div>
+    		</div>
+    	</div>
+    </div>
+    <!--End of info section tags-->
+
+
+    <!--Syllabus section tags-->
+    <div class="syllabus" id='mydiv2'>
+
+      <div class="syllabus-info">
+        <label class="s-title">Syllabus</label>
+        <button name="next" class="s-module-btn"><img src="{% static 'images/courses/next.png' %}" alt="" class="change-module"></button>
+        <button name="prev" class="s-module-bt"><img src="{% static 'images/courses/prev.png' %}" alt="" class="change-module"></button>
+        
+       <div class="s-module-main">        
+          <div class="s-mod">
+              <label class="s-mod-name">Module 1</label>
+              <label class="s-label">:Introduction to C</label>
+          </div>
+          
+          <div class="s-lec">
+            <label class="s-label2">This Module explain about introduction to C and input/output instruction of C Programming.</label><br>
+            <div class="s-lec-num" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 1</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-name2">How to use Cose Blocks</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 50px">
+                <label class="s-lec-num1">Lecture 2</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 50px">
+                <label class="s-lec-name2">Introduction to C Programming-1</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 3</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-name2">Introduction to C Programming-2</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 140px">
+                <label class="s-lec-num1">Lecture 4</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 140px">
+                <label class="s-lec-name2">Introduction to C Programming-3</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 185px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 5</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 185px; background: #F0F0F0">
+                <label class="s-lec-name2">Identifiers</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 230px">
+                <label class="s-lec-num1">Lecture 6</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 230px">
+                <label class="s-lec-name2">Datatypes in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 275px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 7</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 275px; background: #F0F0F0">
+                <label class="s-lec-name2">Input/Output instruction-1</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 320px">
+                <label class="s-lec-num1">Lecture 8</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 320px">
+                <label class="s-lec-name2">Input/Output instruction-2</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 365px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 9</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 365px; background: #F0F0F0">
+                <label class="s-lec-name2">Input/Output instruction-3</label>
+            </div>
+ 
+            <div class="s-lec-num" style="margin-top: 410px">
+                <label class="s-lec-num1">Lecture 10</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 410px">
+                <label class="s-lec-name2">Input/Output instruction-4</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 455px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 11</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 455px; background: #F0F0F0">
+                <label class="s-lec-name2">Use of gotoxy function</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 500px">
+                <label class="s-lec-num1">Lecture 12</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 500px">
+                <label class="s-lec-name2">What are ASCII Codes</label>
+            </div>
+          </div>
+       </div>
+
+      <div class="s-module-main">        
+          <div class="s-mod">
+              <label class="s-mod-name">Module 2</label>
+              <label class="s-label">:Arithmetic instruction and Operators</label>
+          </div>
+          
+          <div class="s-lec">
+            <label class="s-label2">In this Module you learn about Arithmetic instruction and operators in C.</label><br>
+            <div class="s-lec-num" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 1</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-name2"> Aritmetic Instruction in C Part 1</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 50px">
+                <label class="s-lec-num1">Lecture 2</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 50px">
+                <label class="s-lec-name2"> Aritmetic Instruction in C Part 2</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 3</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-name2">Aritmetic Instruction in C Part 3</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 140px">
+                <label class="s-lec-num1">Lecture 4</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 140px">
+                <label class="s-lec-name2">Aritmetic Instruction in C Part 4</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 185px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 5</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 185px; background: #F0F0F0">
+                <label class="s-lec-name2">Modulus Operator (%) in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 230px">
+                <label class="s-lec-num1">Lecture 6</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 230px">
+                <label class="s-lec-name2">Bitwise NOT (~) Operator in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 275px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 7</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 275px; background: #F0F0F0">
+                <label class="s-lec-name2">Aritmetic Instruction in C Part 5</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 320px">
+                <label class="s-lec-num1">Lecture 8</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 320px">
+                <label class="s-lec-name2">Arithmetic Instruction in C Part 6</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 365px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 9</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 365px; background: #F0F0F0">
+                <label class="s-lec-name2">Arithmetic Instruction in C Part 7</label>
+            </div>
+ 
+            <div class="s-lec-num" style="margin-top: 410px">
+                <label class="s-lec-num1">Lecture 10</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 410px">
+                <label class="s-lec-name2">Conditional Operator (?:) in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 455px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 11</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 455px; background: #F0F0F0">
+                <label class="s-lec-name2">Compound Assignment Operator</label>
+            </div>
+          </div>
+       </div>
+
+       <div class="s-module-main">        
+          <div class="s-mod">
+              <label class="s-mod-name">Module 3</label>
+              <label class="s-label">:Decision Control statement and Loops</label>
+          </div>
+          
+          <div class="s-lec">
+            <label class="s-label2">Here various decision control statements and Loops were explained.</label><br>
+            <div class="s-lec-num" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 1</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-name2">Decision Control in C Part 1</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 50px">
+                <label class="s-lec-num1">Lecture 2</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 50px">
+                <label class="s-lec-name2">Decision Control in C Part 2</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 3</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-name2">Decision Control in C Part 3</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 140px">
+                <label class="s-lec-num1">Lecture 4</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 140px">
+                <label class="s-lec-name2">Nested if else in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 185px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 5</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 185px; background: #F0F0F0">
+                <label class="s-lec-name2">if else ladder in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 230px">
+                <label class="s-lec-num1">Lecture 6</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 230px">
+                <label class="s-lec-name2">Loops in C Part 1</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 275px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 7</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 275px; background: #F0F0F0">
+                <label class="s-lec-name2">Loops in C Part 2</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 320px">
+                <label class="s-lec-num1">Lecture 8</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 320px">
+                <label class="s-lec-name2">Loops in C Part 3</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 365px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 9</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 365px; background: #F0F0F0">
+                <label class="s-lec-name2"> Switch case in C</label>
+            </div>
+          </div>
+       </div>
+
+       <div class="s-module-main">        
+          <div class="s-mod">
+              <label class="s-mod-name">Module 4</label>
+              <label class="s-label">:Function and Recursion</label>
+          </div>
+          
+          <div class="s-lec">
+            <label class="s-label2">This Module explain about function and recursion in C Programming.</label><br>
+            <div class="s-lec-num" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 1</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-name2">Functions in C Part 1</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 50px">
+                <label class="s-lec-num1">Lecture 2</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 50px">
+                <label class="s-lec-name2">Functions in C Part 2</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 3</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-name2">Functions in C Part 3</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 140px">
+                <label class="s-lec-num1">Lecture 4</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 140px">
+                <label class="s-lec-name2">Functions in C Part 4</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 185px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 5</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 185px; background: #F0F0F0">
+                <label class="s-lec-name2">Functions in C Part 5</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 230px">
+                <label class="s-lec-num1">Lecture 6</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 230px">
+                <label class="s-lec-name2">Recursion in C</label>
+            </div>
+          </div>
+       </div>
+
+       <div class="s-module-main">        
+          <div class="s-mod">
+              <label class="s-mod-name">Module 5</label>
+              <label class="s-label">:Array and Strings</label>
+          </div>
+          
+          <div class="s-lec">
+            <label class="s-label2">In this Module you will learn One and two dimension Array and concept of Strings.</label><br>
+            <div class="s-lec-num" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 1</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-name2">Arrays in C Part 1</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 50px">
+                <label class="s-lec-num1">Lecture 2</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 50px">
+                <label class="s-lec-name2">Arrays in C Part 2</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 3</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-name2">Two Dimensional Arrays in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 140px">
+                <label class="s-lec-num1">Lecture 4</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 140px">
+                <label class="s-lec-name2">When to use an array</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 185px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 5</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 185px; background: #F0F0F0">
+                <label class="s-lec-name2">Strings in C Part 1</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 230px">
+                <label class="s-lec-num1">Lecture 6</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 230px">
+                <label class="s-lec-name2">Strings in C Part 2</label>
+            </div>
+          </div>
+       </div>
+
+       <div class="s-module-main">        
+          <div class="s-mod">
+              <label class="s-mod-name">Module 6</label>
+              <label class="s-label">:Pointers</label>
+          </div>
+          
+          <div class="s-lec">
+            <label class="s-label2">This Module explain about the concept of Pointers in C.</label><br>
+            <div class="s-lec-num" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 1</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-name2">Pointers in C Part 1</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 50px">
+                <label class="s-lec-num1">Lecture 2</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 50px">
+                <label class="s-lec-name2">Pointers in C Part 2</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 3</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-name2">Application of Pointers in C Part 1</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 140px">
+                <label class="s-lec-num1">Lecture 4</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 140px">
+                <label class="s-lec-name2">Application of Pointers in C Part 2</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 185px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 5</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 185px; background: #F0F0F0">
+                <label class="s-lec-name2">Application of Pointers in C Part 3</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 230px">
+                <label class="s-lec-num1">Lecture 6</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 230px">
+                <label class="s-lec-name2">Application of Pointers in C Part 4</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 275px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 7</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 275px; background: #F0F0F0">
+                <label class="s-lec-name2">Application of Pointers in C Part 5</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 320px">
+                <label class="s-lec-num1">Lecture 8</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 320px">
+                <label class="s-lec-name2">Wild Pointer in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 365px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 9</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 365px; background: #F0F0F0">
+                <label class="s-lec-name2"> NULL Pointer in C</label>
+            </div>
+ 
+            <div class="s-lec-num" style="margin-top: 410px">
+                <label class="s-lec-num1">Lecture 10</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 410px">
+                <label class="s-lec-name2">Void pointer in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 455px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 11</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 455px; background: #F0F0F0">
+                <label class="s-lec-name2">Dangling Pointer in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 500px">
+                <label class="s-lec-num1">Lecture 12</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 500px">
+                <label class="s-lec-name2">Function Pointer in C language?</label>
+            </div>
+          </div>
+       </div>
+
+       <div class="s-module-main">        
+          <div class="s-mod">
+              <label class="s-mod-name">Module 7</label>
+              <label class="s-label">:Structure and Union</label>
+          </div>
+          
+          <div class="s-lec">
+            <label class="s-label2">In this module concept of Structure and Union were explained.</label><br>
+            <div class="s-lec-num" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 1</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-name2">Structure in C Language Part 1</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 50px">
+                <label class="s-lec-num1">Lecture 2</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 50px">
+                <label class="s-lec-name2">Structure in C Language Part 2</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 3</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-name2">Union in C</label>
+            </div>
+          </div>
+       </div>
+
+       <div class="s-module-main">        
+          <div class="s-mod">
+              <label class="s-mod-name">Module 8</label>
+              <label class="s-label">:Dynamic Memory Allocation</label>
+          </div>
+          
+          <div class="s-lec">
+            <label class="s-label2">Here you learn how to allocat memory dynamically and some operators like enumerator & typedef.</label><br>
+            <div class="s-lec-num" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 1</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-name2">Dynamic Memory Allocation in C Part 1</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 50px">
+                <label class="s-lec-num1">Lecture 2</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 50px">
+                <label class="s-lec-name2">Dynamic Memory Allocation in C Part 2</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 3</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-name2">Enumerators in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 140px">
+                <label class="s-lec-num1">Lecture 4</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 140px">
+                <label class="s-lec-name2">typedef in C</label>
+            </div>
+          </div>
+       </div>
+
+       <div class="s-module-main">        
+          <div class="s-mod">
+              <label class="s-mod-name">Module 9</label>
+              <label class="s-label">:Preprocessor Command</label>
+          </div>
+          
+          <div class="s-lec">
+            <label class="s-label2">In this Module you know the world of Preprocessor Commands in C Programming.</label><br>
+            <div class="s-lec-num" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 1</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-name2">Preprocessor Command #include in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 50px">
+                <label class="s-lec-num1">Lecture 2</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 50px">
+                <label class="s-lec-name2">Preprocessor Command #define #undef in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 3</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-name2">Preprocessor Commands in C Language</label>
+            </div>
+          </div>
+       </div>
+
+       <div class="s-module-main">        
+          <div class="s-mod">
+              <label class="s-mod-name">Module 10</label>
+              <label class="s-label">:File Handling</label>
+          </div>
+          
+          <div class="s-lec">
+            <label class="s-label2">Here the full concept of File Handling in C were explained.</label><br>
+            <div class="s-lec-num" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 1</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-name2">File Handling in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 50px">
+                <label class="s-lec-num1">Lecture 2</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 50px">
+                <label class="s-lec-name2">Writing in a file in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 3</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-name2">File Opening Modes in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 140px">
+                <label class="s-lec-num1">Lecture 4</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 140px">
+                <label class="s-lec-name2">Reading from a file in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 185px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 5</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 185px; background: #F0F0F0">
+                <label class="s-lec-name2">Reading from file using fgets in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 230px">
+                <label class="s-lec-num1">Lecture 6</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 230px">
+                <label class="s-lec-name2">Writing in a file using fputs</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 275px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 7</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 275px; background: #F0F0F0">
+                <label class="s-lec-name2">Writing file using fwrite function in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 320px">
+                <label class="s-lec-num1">Lecture 8</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 320px">
+                <label class="s-lec-name2">Reading from a file using fread in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 365px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 9</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 365px; background: #F0F0F0">
+                <label class="s-lec-name2">Writing in a file using fprinf function in C</label>
+            </div>
+ 
+            <div class="s-lec-num" style="margin-top: 410px">
+                <label class="s-lec-num1">Lecture 10</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 410px">
+                <label class="s-lec-name2">Reading from a file using fscanf function in C</label>
+            </div>
+          </div>
+       </div>
+
+       <div class="s-module-main">        
+          <div class="s-mod">
+              <label class="s-mod-name">Module 11</label>
+              <label class="s-label">:Miscellaneous</label>
+          </div>
+          
+          <div class="s-lec">
+            <label class="s-label2">In this module you learn about Storage Classes and some miscellaneous topics.</label><br>
+            <div class="s-lec-num" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 1</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 5px; background: #F0F0F0">
+                <label class="s-lec-name2">Storage classes in C Language Part 1</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 50px">
+                <label class="s-lec-num1">Lecture 2</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 50px">
+                <label class="s-lec-name2">Storage classes in C language Part 2</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 3</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 95px; background: #F0F0F0">
+                <label class="s-lec-name2">Bit Fields in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 140px">
+                <label class="s-lec-num1">Lecture 4</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 140px">
+                <label class="s-lec-name2">Command Line Arguments in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 185px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 5</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 185px; background: #F0F0F0">
+                <label class="s-lec-name2">const in C</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 230px">
+                <label class="s-lec-num1">Lecture 6</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 230px">
+                <label class="s-lec-name2">What is dry run? part 1</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 275px; background: #F0F0F0">
+                <label class="s-lec-num1">Lecture 7</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 275px; background: #F0F0F0">
+                <label class="s-lec-name2">What is dry run? part 2</label>
+            </div>
+
+            <div class="s-lec-num" style="margin-top: 320px">
+                <label class="s-lec-num1">Lecture 8</label>
+            </div>
+            <div class="s-lec-name" style="margin-top: 320px">
+                <label class="s-lec-name2">Find Output of C program | Dry Run Example</label>
+            </div>
+          </div>
+       </div>
+      </div>
+    </div>
+    <!--End of Syllabus section tags-->
+
+
+    <!--Instructor section tags-->
+    <div class="instructor" id='mydiv3'>
+      <div class="instructor-img">
+        <img src="{% static 'images/courses/SS.png' %}" alt="" class="i-image">
+      </div>
+      <div class="instructor-info">
+        <label class="i-info">Founder <br> MySirG.com</label><br>
+        <label class="i-info2">About Instructor</label><br>
+        <label class="i-info3">Mr. Saurabh Shukla studied at NIT, BHOPAL (MCA). He is a freelancer and Youtuber
+        who provides online tutorials in programming languages such as: C Programming, C++, Java, 
+        PHP, Python, Html, CSS, MySQL etc. . <br><br> Saurabh's aim is to reach students who are deprived
+        of education due to language barrier and financial issue.</label>
+      </div>
+    </div>
+    <!--End of Instructor section tags-->
+    
+    <!-- Footer Section tags--> 
+
+    <div class="my-footer">
+
+         <div class="footer-logo">
+           <img src="{% static 'images/courses/logo.png' %}" alt="">
+        </div>
+
+        <div class="container1">
+          <a href="#"><b>• Privacy Policy</a> <br><p></p> 
+          <a href="#">• Terms & Conditions</a>
+        </div>
+   
+        <div class="container2">
+           <a href="https://www.facebook.com" style="margin-right: 40px"><img src="{% static 'images/courses/facebook.png' %}" alt=""></a>
+           <a href="https://www.twitter.com" style="margin-right: 40px"><img src="{% static 'images/courses/twitter.png' %}" alt=""></a>
+           <a href="https://www.linkedin.com"><img src="{% static 'images/courses/linkedin.png' %}" alt=""></a>
+        </div>
+
+        <div class="container-footer"><b>Copyright &copy; 2019 Eklavya. All right reserved</b>
+        </div>   
+
+        <div class="container-footer1"><b>Support & Feedback: Eklavya2019@email.com</b>
+        </div>  
+
+      
+    </div>
+</body>
+
+</html>
